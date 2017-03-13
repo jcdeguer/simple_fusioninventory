@@ -4,7 +4,6 @@
 # === Variables
 # === Examples
 # === Authors
-#
 # Author Name Juan Carlos <juan.deguer@gmail.com>
 #
 
