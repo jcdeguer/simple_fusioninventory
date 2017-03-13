@@ -61,10 +61,6 @@ class simple_fusioninventory (
   include simple_fusioninventory::install
   include simple_fusioninventory::config
   
-  Class['simple_fusioninventory::install'] -> Class['simple_fusioninventory::config'] -> Exec ['simple_fusioninventory::pkgfusion']
-  
-  exec { $pkgfusion:
-    command => '/usr/bin/fusioninventory-agent',
-  }
+  Class['simple_fusioninventory::install'] -> Class['simple_fusioninventory::config'] -> Class['simple_fusioninventory::service']
 
 }
