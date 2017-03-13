@@ -1,0 +1,13 @@
+{
+  "name": "jcdeguer-simple_fusioninventory",
+  "version": "0.1.0",
+  "author": "jcdeguer",
+  "summary": "Puppet module to install, configure and log information into a GLPI Server for a CMDB",
+  "license": "Apache 2.0",
+  "source": "https://github.com/jcdeguer/simple_fusioninventory",
+  "project_page": "https://github.com/jcdeguer/simple_fusioninventory",
+  "issues_url": "https://github.com/jcdeguer/simple_fusioninventory/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
