@@ -10,3 +10,7 @@
 # http://docs.puppetlabs.com/guides/tests_smoke.html
 #
 include simple_fusioninventory
+
+class {'simple_fusioninventory':
+
+}
