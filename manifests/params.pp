@@ -7,7 +7,7 @@ class simple_fusioninventory::params
         $activerehashing        = true
         $appendfsync            = 'everysec'
         $appendonly             = false
-        $server                 = '10.100.10.66'
+        $server                 = '10.10.10.10'
         $ruta_web_glpi          = undef
         $delaytime              = 3600
         $lazy                   = 0
