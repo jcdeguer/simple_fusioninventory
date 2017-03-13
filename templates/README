@@ -1,0 +1,5 @@
+# 
+# Replace the file with the name and crt file of your own GLPI server.
+# Normaly, you must copy the certificate file here to be used for Puppet to create the file on each node server.
+# After copy that file, need to set the name on the parameter $ca_cert_template in the params.pp file.
+# 
