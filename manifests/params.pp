@@ -1,8 +1,8 @@
-class fusioninventory::params
+class simple_fusioninventory::params
 {
         $pkgfusion              = 'fusioninventory-agent'
         $crondest               = '/etc/cron.daily/fusioninventory'
-        $conf_template          = 'fusioninventory/agent.cfg.erb'
+        $conf_template          = 'simple_fusioninventory/agent.cfg.erb'
         $manage_repo            = false
         $activerehashing        = true
         $appendfsync            = 'everysec'
