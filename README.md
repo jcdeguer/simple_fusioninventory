@@ -1,79 +1,36 @@
 # simple_fusioninventory
+Puppet module to install, config and run the fusioninventory-agent into Linux's server on Red Hat family's distros, using Foreman.
 
 #### Table of Contents
-
 1. [Overview](#overview)
 2. [Module Description - What the module does and why it is useful](#module-description)
 3. [Setup - The basics of getting started with simple_fusioninventory](#setup)
     * [What simple_fusioninventory affects](#what-simple_fusioninventory-affects)
     * [Setup requirements](#setup-requirements)
     * [Beginning with simple_fusioninventory](#beginning-with-simple_fusioninventory)
-4. [Usage - Configuration options and additional functionality](#usage)
-5. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
-5. [Limitations - OS compatibility, etc.](#limitations)
-6. [Development - Guide for contributing to the module](#development)
+4. [Limitations - OS compatibility, etc.](#limitations)
 
 ## Overview
-
-A one-maybe-two sentence summary of what the module does/what problem it solves.
-This is your 30 second elevator pitch for your module. Consider including
-OS/Puppet version it works with.
+When you need to know, how it's your infraestructure composed by, and never made a cute CMDB this is when GLPI it's help as an Open Source and free solution. And keep the CMDB updated everytime automaticaly using a fusioninventory-agent it's a great solution. This class solved the problem of a continusly update when it's integrated on The Foreman project.
 
 ## Module Description
+This module keep updated the CMDB of GLPI whens runs Puppet agent every time.
 
-If applicable, this section should have a brief description of the technology
-the module integrates with and what that integration enables. This section
-should answer the questions: "What does this module *do*?" and "Why would I use
-it?"
+Divided into sequentially applied classes.
+Install -> Config -> Service
+The service ensure to run and avoid errors if some modules went wrong. 
 
-If your module has a range of functionality (installation, configuration,
-management, etc.) this is the time to mention it.
 
 ## Setup
 
 ### What simple_fusioninventory affects
-
-* A list of files, packages, services, or operations that the module will alter,
-  impact, or execute on the system it's installed on.
-* This is a great place to stick any warnings.
-* Can be in list or paragraph form.
+Affect the CMDB of a GLPI server updating a computer assest.
 
 ### Setup Requirements **OPTIONAL**
-
-If your module requires anything extra before setting up (pluginsync enabled,
-etc.), mention it here.
+It's needed a epel repository or access to a mirror with perl and fusioninventory packages.
 
 ### Beginning with simple_fusioninventory
-
-The very basic steps needed for a user to get the module up and running.
-
-If your most recent release breaks compatibility or requires particular steps
-for upgrading, you may wish to include an additional section here: Upgrading
-(For an example, see http://forge.puppetlabs.com/puppetlabs/firewall).
-
-## Usage
-
-Put the classes, types, and resources for customizing, configuring, and doing
-the fancy stuff with your module here.
-
-## Reference
-
-Here, list the classes, types, providers, facts, etc contained in your module.
-This section should include all of the under-the-hood workings of your module so
-people know what the module is touching on their system but don't need to mess
-with things. (We are working on automating this section!)
+To be used just need to place the simple_fusioninventory folder on your Puppet's module folder, import the class and it's ready to be used.
 
 ## Limitations
-
-This is where you list OS compatibility, version compatibility, etc.
-
-## Development
-
-Since your module is awesome, other users will want to play with it. Let them
-know what the ground rules for contributing are.
-
-## Release Notes/Contributors/Etc **Optional**
-
-If you aren't using changelog, put your release notes here (though you should
-consider using changelog). You may also add any additional sections you feel are
-necessary or important to include here. Please use the `## ` header.
+Just tested on Red Hat, CentOS, and Oracle Linux 6.x and 7.x
